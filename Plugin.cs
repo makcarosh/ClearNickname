@@ -15,13 +15,13 @@ public class NameCleanerPlugin : RocketPlugin<Configuration>
     protected override void Load()
     {
         UnturnedPermissions.OnJoinRequested += UnturnedPermissions_OnJoinRequested;
-        Rocket.Core.Logging.Logger.Log("Clear nick is load! \nDeveloper discord: makcarosh")
+        Rocket.Core.Logging.Logger.Log("Clear nick is load! \nDeveloper discord: makcarosh");
     }
 
     protected override void Unload()
     {
         UnturnedPermissions.OnJoinRequested -= UnturnedPermissions_OnJoinRequested;
-        Rocket.Core.Logging.Logger.Log("Clear nick is unload! \nDeveloper discord: makcarosh")
+        Rocket.Core.Logging.Logger.Log("Clear nick is unload! \nDeveloper discord: makcarosh");
     }
     
     private void UnturnedPermissions_OnJoinRequested(CSteamID player, ref ESteamRejection? rejectionReason)
